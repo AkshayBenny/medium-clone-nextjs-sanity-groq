@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 
 const LoginPage = () => {
+  
   return (
     <div className='min-h-screen flex justify-center items-center'>
       <form className='border gap-6 py-24 px-12 rounded border-gray-500 flex flex-col justify-center items-center'>

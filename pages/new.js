@@ -12,7 +12,9 @@ const LoginPage = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-    }).then((response) => console.log(response));
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
   };
 
   const submitHandler = async (e) => {
@@ -37,6 +39,9 @@ const LoginPage = () => {
           placeholder='Email'
           className='border rounded px-4 py-2'
         />
+        {/* {message === 'User already exists' && (
+          <p className='text-red-500'>User already exists</p>
+        )} */}
         <input
           required
           type='text'
